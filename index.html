@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal DOM</title>
+</head>
+<body>
+    <h1>Web developer</h1>
+    <p id="content1"> Hi, Everyone myself <strong>Gokul s</strong> I have completed Bsc Mathematics with Comnputer application in DG vaishnav college in 2020. </p>
+    <p class="content2">Skils & Languages Known</p>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>BOOTSTRAP</li>
+        <li>NODE JS</li>
+    </ul>
+    <script>
+             // styling h1 using js
+        document.querySelector("h1").style.color="red";
+        document.querySelector("h1").style.fontSize="3rem";
+        document.querySelector("h1").style.textShadow="0 0 4px black";
+
+             // styling paragraph one using js
+      document.getElementById("content1").style.color="brown";
+      document.getElementById("content1").style.fontSize="1.5rem";
+      document.querySelector("strong").style.color="blue";
+
+            // styling paragraph two using js
+
+            document.getElementsByClassName("content2")[0].style.color="green";
+            document.getElementsByClassName("content2")[0].style.fontSize="1.5rem";
+
+
+            // styling lists using js
+
+        document.querySelectorAll("li")[0].style.color="red"; 
+        document.querySelectorAll("li")[0].innerHTML="Hyper Text Markup language"
+        document.querySelectorAll("li")[1].style.color="orange"; 
+        document.querySelectorAll("li")[2].style.color="blue"; 
+        document.querySelectorAll("li")[2].innerHTML="Java Script";
+        document.querySelectorAll("li")[3].style.color="pink"; 
+        document.querySelectorAll("li")[4].style.color="black"; 
+
+
+    </script>
+</body>
+</html>
